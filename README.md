@@ -5,7 +5,7 @@ This is a part of the Capstone project of Google Data Analytics Certificate prog
 ### Quick Links
 [Dataset](https://www.kaggle.com/datasets/tawfikelmetwally/employee-dataset)
 
-SQL Query
+[SQL Query](Query.sql)
 
 ## Scenario
 ### Company Overview
