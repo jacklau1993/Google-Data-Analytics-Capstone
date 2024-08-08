@@ -1,8 +1,3 @@
----
-title: HR Analysis
-
----
-
 ## Introduction
 
 This is a part of the Capstone project of Google Data Analytics Certificate programme. In the project, I will play a role of junior data analyst to provide analysed data for stakeholder to make data-driven decisions.
