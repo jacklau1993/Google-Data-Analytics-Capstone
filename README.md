@@ -103,10 +103,6 @@ ORDER BY
     count DESC;
 ```
 
-The result looks like this:
-![工作表 1Distribution of educational qualifications among employees](https://hackmd.io/_uploads/r1PxQjf5A.png)
-
-
 There are total 4653 employees in the workforce. Among them, 3601 are Bachelors, 873 are Masters, and 179 has a PHD.
 
 ### "How does the length of service (joining year) vary across different cities?"
@@ -125,11 +121,7 @@ GROUP BY
 ORDER BY
     avg_length_of_service DESC;
 ```
-This generates a new dataset that shows the average length of service for each city. And the visualised result looks like this.
-
-![Length of service across different cities](https://hackmd.io/_uploads/BkW0msf9C.png)
-
-
+This generates a new dataset that shows the average length of service for each city. 
 
 For Bangalore, the average length of service is 9.1 year. For Pune, the average length of service is 8.9 year. For New Delhi, the average length of service is 8.4 year.
 
@@ -142,8 +134,6 @@ SELECT
 FROM
     `focused-veld-331705.employee_dataset.employee_dataset_formatted`;
 ```
-
-![Screenshot 2024-08-08 at 21.01.19](https://hackmd.io/_uploads/rJ_NNjf5R.png)
 
 The correlation coefficient is 0.0183, which is a very near to zero value. In other words, it shows a very weak positive correlation between Payment Tier and Experience in the Current Domain. 
 
@@ -162,8 +152,6 @@ GROUP BY
 ORDER BY
     count DESC;
 ```
-
-![gender_distribution](https://hackmd.io/_uploads/ryq54szcA.png)
 
 This creates a new table that shows the gender distribution: 2778 male and 1875 female.
 
@@ -188,10 +176,6 @@ ORDER BY
 ```
 The below result from the query shows that 47.15% of female employees are on leave, while male employees only count for 25.77%.
 
-![leave_distribution_gender_SQL](https://hackmd.io/_uploads/HJ09UizcC.png)
-
-
-
 ##### City
 ```
 -- leave distribution by city
@@ -208,8 +192,6 @@ ORDER BY
     leave_percentage DESC;
 ```
 The result shows that 50.39% of employees in Pune, 31.63% of employees in New Delhi, and 26.71% of employees in Bangalore are on leave.
-
-![Screenshot 2024-08-04 at 21.34.23](https://hackmd.io/_uploads/SyV1IDTYR.png)
 
 ##### Education
 ```
@@ -228,8 +210,6 @@ ORDER BY
 ```
 It shows that employees with a Master degree are most likely to take leave, which count for 48.8%. PHD employees are the least to take leave, about 25%.
 
-![Screenshot 2024-08-04 at 21.37.31](https://hackmd.io/_uploads/B1ZoLP6FA.png)
-
 #### Leave distribution by work-related factors
 ##### Payment Tier
 ```
@@ -247,9 +227,6 @@ ORDER BY
     leave_percentage DESC;
 ```
 
-
-![Screenshot 2024-08-04 at 21.48.17](https://hackmd.io/_uploads/B1GmtP6FA.png)
-
 ##### Experience in Current Domain
 ```
 -- leave distribution by experience in current domain
@@ -265,7 +242,6 @@ GROUP BY
 ORDER BY
     leave_percentage DESC;
 ```
-![Screenshot 2024-08-04 at 22.32.20](https://hackmd.io/_uploads/rk9dX_6KA.png)
 
 ##### Joining Year
 ```
@@ -282,7 +258,6 @@ GROUP BY
 ORDER BY
     leave_percentage DESC;
 ```
-![Screenshot 2024-08-04 at 22.34.30](https://hackmd.io/_uploads/HJDeNd6FA.png)
 
 With all these analysis, we can look for patterns for leave-taking behaviour. In order to visualise it, Tableau comes into play.
 
